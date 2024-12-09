@@ -5,8 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script type="text/javascript"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/clipart1354909" alt="Cup of Joe Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Main -->
+  
+    <section id="home" class="hero">
+      <h1>Welcome to Sips</h1>
+      <p>We're all tired, have a cup of coffee.</p>
+      <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <!-- About Us -->
+  
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        Here At Sips, we believe in serving our community the finest cup of coffee. Founded in 2024, it is a vision dedicated to providing freshly brewed coffee and an third place for our community.
+      </p>
+    </section>
+
+    <!-- Menu Section -->
+  
+    <section id="menu" class="menu">
+      <h2>Our Menu</h2>
+      <ul>
+        <li>Coffee of the Day - $2.95</li>
+        <li>Espresso - $3.00</li>
+        <li>Cappuccino - $4.00</li>
+        <li>Latte - $4.50</li>
+        <li>Mocha - $5.00</li>
+        <li>Cookies - $2.50</li>
+      </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sips. All rights reserved.</p>
+  </footer> 
+    <script src="script.js"></script>
   </body>
 </html>html
