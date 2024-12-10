@@ -3,9 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f; /* Dark blackish-blue */
+  background-color: #0a0a23; /* Deep Navy */
   color: white;
   padding: 10px 20px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.3)
+  postition: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-logo {
@@ -15,7 +19,7 @@
 
 .logo-text {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Menu Styles */
