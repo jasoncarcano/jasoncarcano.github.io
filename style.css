@@ -50,6 +50,14 @@ section {
 #about {
     background-color: #f5deb3;
     color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 #menu {
