@@ -15,24 +15,28 @@
 <body>
   <header>
     <nav class="navbar">
-    <a href="#" class="nav-logo"><h2>☕ Sips Coffee</h2></a>
-     <ul class="nav-menu">
+    <a href="#" class="nav-logo"><h2>☕ Sips Coffee</h2>
+  </a>
+      
+    <ul class="nav-menu">
+     <button id="menu-close-button" class="fas fa-times"></button>
       <li><a href="#home" class="nav-link">Home</a></li>
       <li><a href="#about" class="nav-link">About Us</a></li>
       <li><a href="#menu" class="nav-link">Menu</a></li>
       <li><a href="#reviews" class="nav-link">Reviews</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
-    <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <button id="menu-open-button" class="fas fa-bars"></i></button>
   </nav>
 </header>
 
-<main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-      <h1>Welcome to Sips</h1>
-      <p>We're all tired, have a cup of coffee.</p>
-      <div class="hero-buttons">
+<section id="home" class="hero">
+  <div class="section-content">
+    <div class="hero-content">
+      <h2 class="title">Welcome to Sips Coffee</h2>
+      <h3 class="subtitle">We're all tired, have a cup of coffee!</h3>
+      <p class="description">Sips, where every cup is brewed by with love by our baristas.</p>
+      <div class="buttons">
       <a href="#menu" class="btn">Explore Our Menu</a>
       </div>
     </div>
@@ -40,39 +44,69 @@
 
     <!-- About Us -->
   
-    <section id="about" class="about">
-      <h2>About Us</h2>
-      <div class="about-content">
+<section id="about" class="about-section">
+  <div class="section-content">
+    <div class="about-image-wrapper">
+      <img src="images/about-image.jpg" alt="About" class="about-image" />
+    </div>
+      <div class="about-details">
+        <h2 class="section-title">About Us</h2>
       <p>
         Here at Sips Coffee in Northridge, CA, we believe in serving our community the finest cup of coffee. Founded in 2024, it is a vision dedicated to providing the best cup of coffee possible. This is a place where people come to relax, study, and have fun, come by to relax, we look forward to seeing you soon.
       </p>
     </div>
-  </section>
+  </div>
+</section>
 
     <!-- Menu Section -->
-  
-  <section id="menu" class="menu">
-    <h2>Our Menu</h2>
-     <ul>
-       <li>Coffee of the Day - $2.95</li>
-       <li>Espresso - $3.00</li>
-       <li>Cappuccino - $4.00</li>
-       <li>Latte - $4.50</li>
-      <li>Mocha - $5.00</li>
-       <li>Cookies - $2.50</li>
-     </ul>
-  </section>
-
-  <section id="reviews" class="reviews">
-    <h2>Reviews</h2>
-    <div class="review-container">
-      <div class="review">
-        <p>"The best coffee in town! I recommend everyone tries at least once!"</p>
-        <span>- Johnny D.</span>
-      <div class="review">
-        <p>"Staff are super friendly, my new favorite place!"</p>
-        <span>- Vivian S.</span>
+  <section id="menu" class="menu-section">
+    <h2 class="section-title">Our Menu</h2>
+     <div class="section-content">
+      <ul class="menu-list">
+        <li class="menu-item">
+        <h3 class="name">Coffee of the Day</h3>
+          <p class="description">A different coffee every day to keep you excited. $2.95</p>
+          </li>
+          <li class="menu-item">
+        <h3 class="name">Espresso</h3>
+            <p class="description">The classic espresso. $3.00</p>
+          </li>
+          <li class="menu-item">
+        <h3 class="name">Cappuccino</h3>
+            <p class="description">Espresso topped with frothy milk. $4.00</p>
+          </li>
+          <li class="menu-item">
+        <h3 class="name">Latte</h3>
+            <p class="description">Smooth espresso with steamed milk. $4.50</p>
+          </li>
+          <li class="menu-item">
+        <h3 class="name">Mocha</h3>
+            <p class="description">A coffee blend with chocolate. $5.00</p>
+          </li>
+          <li class="menu-item">
+            <h3 class="name">Cookies</h3>
+            <p class="description">Freshly baked, perfect. $2.50</p>
+          </li>
+        </ul>
       </div>
+    </section>
+  
+<!-- reviews --> 
+  <section id="reviews" class="reviews-section">
+    <h2 class="section-title">Reviews</h2>
+    <div class="section-content">
+      <div class="swiper container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review">
+            <p>"The best coffee in town! I recommend everyone tries at least once!"</p>
+            <span>- Johnny D.</span>
+          <div class="swiper-slide review">
+            <p>"Staff are super friendly, my new favorite place!"</p>
+            <span>- Vivian S.</span>
+      </div>
+    </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
   </section>
   
@@ -95,14 +129,27 @@
     </div>
 </section>
 
-<footer class="footer-section">
-  <div class="section-content">
+<footer>
+  <div class="footer-content">
     <p>&copy; 2024 Sips Coffee. All rights reserved.</p>
     <p class="policy-text">
       <a href="#" class="policy-link">Privacy policy</a>
      </p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-</body>
+
+  <script>
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+  </body>
 </html>
