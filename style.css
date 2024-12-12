@@ -5,11 +5,12 @@ Background Color: White (#ffffff)
 Text Color: Dark Blue (#002855)
 */
 
-body {
+* {
+  padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: #002855;
-  background-color: #ffffff;
+  box-sizing: border box;
+
 }
 
 /* Navbar */
