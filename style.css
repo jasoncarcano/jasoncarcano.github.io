@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #F05454;
+    background-color: #007BFF; 
     color: white;
     padding: 20px;
     display: flex;
@@ -37,7 +37,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #FFD700;  /* Gold color on hover */
+    color: #FFD700; 
 }
 
 section {
@@ -46,12 +46,12 @@ section {
 }
 
 #about {
-    background-color: #FFD700;
+    background-color: #f5deb3;
     color: #333;
 }
 
 #menu {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
 }
 
 .menu-items {
@@ -71,7 +71,7 @@ section {
 }
 
 #our-story {
-    background-color: #F05454;
+    background-color: #007BFF; 
     color: white;
 }
 
@@ -131,4 +131,3 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
