@@ -1,5 +1,5 @@
 document.getElementById("offerButton").addEventListener("click", function() {
-    alert("Enjoy 10% off your next coffee order! Use code 'CAFE10' at checkout.");
+    alert("That's my presenation, thank you!!");
 });
 
 document.getElementById("contactForm").addEventListener("submit", function(e) {
