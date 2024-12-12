@@ -92,19 +92,21 @@
   
   <section id="contact">
         <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+        <p>What did you think about us? Please let us know with the form below!</p>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <div class="contact-info">
+        <p><strong>Address:</strong> 2134 Nordhoff Street, Northridge, CA</p>
+        <p><strong>Phone:</strong> (818) 677-0000</p>
+        <p><strong>Email:</strong> <a href="mailto:info@sipscoffee.com">info@sipscoffee.com</a></p>
+    </div>
+    
+  <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
     <section id="special-offer">
         <button id="offerButton">Click for Special Offer!</button>
