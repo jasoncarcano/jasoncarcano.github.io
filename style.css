@@ -86,20 +86,27 @@ section {
 }
 
 #gallery {
-    background-color: #FFFFFF;
+    background-color: #f0f4f8;
+    padding: 40px 20px;
 }
 
 .gallery-images {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
     justify-content: center;
     gap: 20px;
 }
 
 .gallery-images img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3 ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.10);
 }
 
 #contact {
