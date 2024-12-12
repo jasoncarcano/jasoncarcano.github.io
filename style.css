@@ -1,163 +1,82 @@
-/* Colors */
-:root {
-  --primary-color: #0d6efd; /* Blue */
-  --secondary-color: #d7e9f7; /* Light Blue */
-  --background-color: #ffffff; /* White */
-  --text-color: #002855; /* Dark Blue */
-  --light-background: #fff7f0; /* Soft Peach */
-  --gray-text: #777777;
-  --box-shadow: rgba(0, 0, 0, 0.1);
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Global */
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+header .logo h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
-.navbar .nav-logo h2 {
-  color: #fff;
-  font-size: 1.8rem;
+header nav ul {
+    list-style-type: none;
+    display: flex;
 }
 
-.nav-menu {
-  display: flex;
-  gap: 15px;
+header nav ul li {
+    margin-left: 20px;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 1.1rem;
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.nav-link:hover {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease;
+section {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(135deg, var(--primary-color), #2980b9);
-  color: #fff;
-  text-align: center;
-  padding: 120px 20px;
-  min-height: 100vh;
+#menu {
+    background-color: #f0f0f0;
 }
 
-.hero h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
 }
 
-.hero .btn {
-  background: linear-gradient(135deg, var(--primary-color), #2980b9);
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: transform 0.3s ease, background 0.3s ease;
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.hero .btn:hover {
-  transform: translateY(-3px);
-  background: linear-gradient(135deg, #2980b9, var(--primary-color));
-  box-shadow: 0px 4px 12px var(--box-shadow);
+button:hover {
+    background-color: #E64A19;
 }
 
-/* About Section */
-.about {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: var(--light-background);
-}
-
-.about h2 {
-  color: var(--text-color);
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1.1rem;
-  color: #555555;
-  line-height: 1.6;
-}
-
-.about-image-wrapper {
-  margin-top: 40px;
-}
-
-.about-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Menu Section */
-.menu {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #f3f3f3;
-}
-
-.menu h2 {
-  margin-bottom: 40px;
-}
-
-.menu ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.menu ul li {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px var(--box-shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu ul li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.menu .name {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: var(--text-color);
-  margin-bottom: 10px;
-}
-
-.menu .description {
-  color: var(--gray-text);
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
