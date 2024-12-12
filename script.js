@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menu-toggle');
+  const menuToggle = document.getElementById('menu-open-button');
   const menuCloseButton = document.getElementById('menu-close-button');
   const navMenu = document.querySelector('.nav-menu');
 
@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     alert('Thank you for supporting us, we will get back to you as soon as possible');
-    Form.reset();
+    form.reset();
   });
 });
