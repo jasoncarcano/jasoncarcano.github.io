@@ -113,6 +113,28 @@ section {
 
 #contact {
     background-color: #f9f9f9;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 form {
@@ -133,7 +155,7 @@ input, textarea {
 button {
     padding: 15px 30px;
     font-size: 1.2em;
-    background-color: #FF5722;
+    background-color: #Fa8fbc;
     color: white;
     border: none;
     border-radius: 5px;
@@ -141,7 +163,7 @@ button {
 }
 
 button:hover {
-    background-color: #E64A19;
+    background-color: #3e6c8e;
 }
 
 footer {
